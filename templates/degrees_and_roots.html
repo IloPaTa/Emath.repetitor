@@ -1,0 +1,102 @@
+<{% extends 'base.html' %}
+
+{%block body%}
+<div class="templatemo-content col-1 light-gray-bg">
+    <div class="templatemo-top-nav-container">
+        <div class="row">
+            <nav class="templatemo-top-nav col-lg-12 col-md-12">
+                <ul class="text-uppercase">
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="templatemo-content-container">
+        <div class="templatemo-content-widget white-bg">
+            <h2 class="margin-bottom-10"><big>Степени и Корни</big></h2>
+        </div>
+        <div class="templatemo-flex-row flex-content-row">
+            <div class="col-1">
+                <div class="panel panel-default margin-10">
+                    <div class="panel-heading">
+                        <h2>Теория</h2>
+                    </div>
+                    <div>
+                        <p style="font-size: 20px;">Степень и взятие числа из-под корня - обратные друг другу
+                            операции</p>
+                        <img src="static/images/stepeni.jpg" alt="Степент"
+                             style="margin-left: 30em; margin-top: 3em; margin-bottom: 3em;">
+                    </div>
+                    <div>
+                        <h2 style="margin-left: 1em; margin-top: 2em;">Пример 1</h2>
+                        <p style="margin-left: 2em; margin-top: 1em; font-size: 30px; ">\( \sqrt200 \over \sqrt8\)</p>
+                        <h2 style="margin-left: 1em; margin-top: 2em;">Решение</h2>
+                        <p style="margin-left: 2em; margin-top: 1em; font-size: 30px; ">\({\sqrt200 \over \sqrt8} =
+                            {\sqrt25 \over \sqrt1} = \sqrt25 = 5\)</p>
+                    </div>
+                    <div>
+                        <h2 style="margin-left: 1em; margin-top: 2em;">Пример 2</h2>
+                        <p style="margin-left: 2em; margin-top: 1em; font-size: 30px; ">\( (2\sqrt6)^2 \over
+                            \sqrt36\)</p>
+                        <h2 style="margin-left: 1em; margin-top: 2em;">Решение</h2>
+                        <p style="margin-left: 2em; margin-top: 1em; font-size: 30px; ">\( {(2\sqrt6)^2 \over \sqrt36} =
+                            {2^2 * (\sqrt6)^2 \over \sqrt36} = {4 * 6 \over 36} = {4 \over 6} = {2 \over 3}\)</p>
+                    </div>
+                    <h3 style="font-size: 30px; margin: 1em; margin-right: 50em; margin-bottom: 1em; margin-top: 1em;">Самостоятельно:</h3>
+                    <form action="/degrees_and_roots" method="post">
+                        <div>
+                            <h2 style="margin-left: 2em; margin-top: 2em;">Задание 1
+                                {% if task1 == "1" and task2 == "48"%}
+                                <label>Верно</label>
+                                {% elif task1 == "" and task2 == ""%}
+                                <label>Не решено</label>
+                                {% else %}
+                                <label>Неверно</label>
+                                {% endif %}</h2>
+                            <p style="margin-left: 3em; margin-top: 1em; font-size: 30px; ">\( {(4\sqrt3)^2 \over
+                                \sqrt48} = {X\over48} = \) <input style="font-size: 20px;" name="task1" size="1"></p>
+                            <p style="margin-left: 4em; margin-top: 1em; font-size: 15px;">\(X = \)
+                                <input name="task2" size="1"></p>
+                        </div>
+                        <div>
+                            <h2 style="margin-left: 2em; margin-top: 2em;">Задание 2
+                                {% if task3 == "50" and task4 == "6" and task5 == "6"%}
+                                <label>Верно</label>
+                                {% elif task3 == "" and task4 == "" and task5 == "" %}
+                                <label>Не решено</label>
+                                {% else %}
+                                <label>Неверно</label>
+                                {% endif %}</h2>
+                            <p style="margin-left: 3em; margin-top: 1em; font-size: 30px; ">\( {10^6 \over
+                                2^5 * 5^4} = {2^x * 5^y\over 2^5 * 5^4} = \) <input style="font-size: 20px;"
+                                                                                    name="task3"
+                                                                                    size="1"></p>
+                            <p style="margin-left: 4em; margin-top: 1em; font-size: 15px;">\(X = \)
+                                <input name="task4" size="1"> \( Y = \) <input name="task5"
+                                                                               size="1"></p>
+                        </div>
+
+                        <div>
+                            <h2 style="margin-left:2em; margin-top: 2em;">Задание 3
+                                {% if task6 == "7" and task7 == "49"%}
+                                <label>Верно</label>
+                                {% elif task6 == "" and task7 == ""%}
+                                <label>Не решено</label>
+                                {% else %}
+                                <label>Неверно</label>
+                                {% endif %}</h2>
+                            <p style="margin-left: 3em; margin-top: 1em; font-size: 30px; ">\( {\sqrt147 \over
+                                \sqrt3} = {\sqrt x} = \)
+                                <input style="font-size: 20px;" name="task6" size="1"></p>
+                            <p style="margin-left: 4em; margin-top: 1em; font-size: 15px;">
+                                \(X = \)<input name="task7" size="1"></p>
+                        </div>
+
+                        <input type="submit"
+                               style="margin-left: 2em; margin-top: 2em; margin-bottom: 2em; font-size:20px;">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

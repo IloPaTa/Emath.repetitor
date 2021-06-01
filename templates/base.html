@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Emath.repetitor</title>
+    <meta name="description" content="">
+    <meta name="author" content="templatemo">
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,700' rel='stylesheet'
+          type='text/css'>
+    <link href="{{ url_for('static', filename='css/font-awesome.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/templatemo-style.css') }}" rel="stylesheet">
+    <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+</head>
+
+<body>
+<!-- Left column -->
+<div class="templatemo-flex-row">
+    <div class="templatemo-sidebar">
+        <header class="templatemo-site-header">
+            <div class="square"></div>
+            <h1>Emath.repetitor</h1>
+        </header>
+        <div class="profile-photo-container">
+            <img src="static/images/profile-photo.jpg" alt="Profile Photo" class="img-responsive">
+        </div>
+        <!-- Search box -->
+        <form class="templatemo-search-form" role="search">
+            <div class="input-group">
+            </div>
+        </form>
+        <div class="mobile-menu-icon">
+            <i class="fa fa-bars"></i>
+        </div>
+        <nav class="templatemo-left-nav">
+            <ul>
+                <li><a href="calculations">Вычисления</a></li>
+                <li><a href="degrees_and_roots">Степени и корни</a></li>
+                <li><a href="FSY">ФСУ</a></li>
+                <li><a href="lineal">Линейные уравнения</a></li>
+                <li><a href="quadratic">Квадратные уравнения</a></li>
+                <li><a href="drobi">Дробно-Рациональные уравнения</a></li>
+                <li><a href="linner">Линейные неравенства</a></li>
+                <li><a href="login">Выйти</a></li>
+            </ul>
+        </nav>
+    </div>
+    {%block body %}{% endblock %}
+</body>
+</html>

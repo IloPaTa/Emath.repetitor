@@ -1,0 +1,161 @@
+{% extends 'base.html' %}
+
+{%block body%}
+<div class="templatemo-content col-1 light-gray-bg">
+    <div class="templatemo-top-nav-container">
+        <div class="row">
+            <nav class="templatemo-top-nav col-lg-12 col-md-12">
+                <ul class="text-uppercase">
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="templatemo-content-container">
+        <div class="templatemo-content-widget white-bg">
+            <h2 class="margin-bottom-10"><big>Линейные неравенства</big></h2>
+        </div>
+        <div class="templatemo-flex-row flex-content-row">
+            <div class="col-1">
+                <div class="panel panel-default margin-10">
+                    <div class="panel-heading">
+                        <h2>Теория</h2>
+                    </div>
+                    <h2 style="margin-left:1em; margin-top:1em; margin-bottom:2em;"><strong>Линейные неравенства</strong></h2>
+                    <div>
+                        <p style="font-size: 20px; margin: 1em; margin-right: 50em">Решение линейных неравенств:
+                            Решение линейных неравенств очень похоже на решение линейных уравнений, отличие лишь в самом
+                            знаке >, <, ≤,≥.</p>
+                    </div>
+                    <p style="font-size: 20px; margin: 1em; margin-right: 50em">Линейным неравенством называют
+                        неравенство вида:</p>
+                    <ul style="margin-top: 1em; margin-bottom: 0.5em; margin-right: 40em; margin-left: 3em; font-size: 20px;">
+                        <li type="disc" style="margin-bottom: 1em;">
+                            kx+b>0,
+                        </li>
+                        <li type="disc" style="margin-bottom: 1em;">
+                            kx+b<0,
+                        </li>
+                        <li type="disc" style="margin-bottom: 1em;">
+                            kx+b≥0,
+                        </li>
+                        <li type="disc" style="margin-bottom: 1em;">
+                            kx+b≤0
+                        </li>
+                    </ul>
+                    <p style="font-size: 20px; margin: 1em; margin-right: 50em">или если проще, линейным называют
+                        неравенство, в котором неизвестное стоит в первой степени, по аналогии с линейным
+                        уравнением.</p>
+                    <p style="font-size: 20px; margin: 1em; margin-right: 50em">Типы неравенств:</p>
+                    <ul style="margin-top: 1em; margin-bottom: 0.5em; margin-right: 40em; margin-left: 3em; font-size: 20px;">
+                        <li type="disc" style="margin-bottom: 1em;">
+                            Строгие — знаки больше (>) или меньше (<):
+                            <ul>
+                                <li> a < b — a (строго) меньше, чем b.</li>
+                                <li>a > b — a (строго) больше, чем b.</li>
+                            </ul>
+                        </li>
+                        <li type="disc" style="margin-bottom: 1em;">
+                            Нестрогие —знаки ≥ (больше или равно) или ≤ (меньше или равно):
+                            <ul>
+                                <li> a ≤ b — a меньше или равно b.</li>
+                                <li> a ≥ b — a больше или равно b.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <h2 style="margin-left:1em; margin-top:1em; margin-bottom:2em;"><strong>Алгоритм решения линейных
+                        неравенств:</strong></h2>
+                    <ul style="margin-top: 1em; margin-bottom: 0.5em; margin-right: 40em; margin-left: 3em; font-size: 20px;">
+                        <li type="1" style="margin-bottom: 1em;">
+                            Раскрыть скобки, если они есть, путем перемножения "фонтанчиком"
+                        </li>
+                        <li type="1" style="margin-bottom: 1em;">
+                            Перенести слагаемые, содержащие переменную в левую сторону от знака неравенства, а слагаемые
+                            без переменной — в правую, знак неравенства при этом не меняем
+                        </li>
+                        <li type="1" style="margin-bottom: 1em;">
+                            Привести подобные слагаемые;
+                        </li>
+                        <li type="1" style="margin-bottom: 1em;">
+                            Разделить полученное левую и правую часть на коэффициент при переменной.
+                        </li>
+                        <li type="1" style="margin-bottom: 1em;">
+                            Если перед неизвестной стоит отрицательный коэффициент, то знак неравенства меняем на
+                            противоположный!
+                        </li>
+                        <li type="1" style="margin-bottom: 1em;">
+                            Чертим числовую ось и отмечаем на ней число, которое стояло справа от знака неравенства.
+                        </li>
+                        <li type="1" style="margin-bottom: 1em;">
+                            Если неравенство строгое (>, <), то число отмечается пустой точкой, если неравенство
+                            нестрогое (≤, ≥), то число отмечается закрашенной точкой.
+                        </li>
+                        <li type="1" style="margin-bottom: 1em;">
+                            Теперь необходимо заштриховать область решений неравенства.
+                            Если знак (<, ≤), то штриховка пойдет влево.
+                            Если знак (>, ≥), то штриховка пойдет вправо.
+                            Или проще, куда показывает знак неравенства, туда идет штриховка.
+                        </li>
+                        <li type="1" style="margin-bottom: 1em;">
+                            Записываем ответ.
+                            <p>Ответ записывается в виде:
+                                x ∈ ....</p>
+                            <p>∈ - принадлежит.</p>
+                            <p>Если неравенство было строгое, то число в ответ не должно войти, значит, оно должно быть
+                                в круглой скобке: (…)
+                                Если неравенство было нестрогое, то число в ответ должно войти, значит, оно должно быть
+                                в квадратной скобке: […]
+                                +∞ и -∞ всегда в круглых скобках.</p>
+                        </li>
+                    </ul>
+                    <div style="font-size: 20px; margin: 1em; margin-right: 50em">
+                        <h2 style="margin-bottom: 0.5em; font-size: 24px;">Пример 1:</h2>
+                        <p style="margin-left: 2em">\(20 - 3(x - 5) < 19 - 7x\)</p>
+                        <h2 style="margin-bottom: 0.5em; font-size: 24px;">Решение:</h2>
+                        <p style="margin-left: 2em">\(20 - 3(x - 5) < 19 - 7x\)</p>
+                        <p style="margin-left: 2em">\(20 - 3x - 15 < 19 - 7x\)</p>
+                        <p style="margin-left: 2em">\(-3x + 7x < 19 - 20 - 15\)</p>
+                        <p style="margin-left: 2em">\(4x < -16\)</p>
+                        <p style="margin-left: 2em">\(x < -4\)</p>
+                        <img src="static/images/linner_1.jpg" alt="1"
+                             style="margin-left: 5em; margin-top: 3em; margin-bottom: 3em;">
+                    </div>
+                    <div style="font-size: 20px; margin: 1em; margin-right: 50em">
+                        <h2 style="margin-bottom: 0.5em; font-size: 24px;">Пример 2:</h2>
+                        <p style="margin-left: 2em">\(4x + 5 \ge 6x - 2\)</p>
+                        <h2 style="margin-bottom: 0.5em; font-size: 24px;">Решение:</h2>
+                        <p style="margin-left: 2em">\(4x + 5 \ge 6x - 2\)</p>
+                        <p style="margin-left: 2em">\(4x - 6x \ge -2 - 5\)</p>
+                        <p style="margin-left: 2em">\(-2x \ge -7\) | : (-2)</p>
+                        <p style="margin-left: 2em">\(x \ge 3,5\)</p>
+
+                    </div>
+                    <form action="/linner" method="post">
+                        <div style="font-size: 20px; margin: 1em; margin-right: 50em">
+                            <h2 style="margin-bottom: 0.5em; font-size: 24px;">Задание 1:
+                                {% if task1 == "2"%}
+                                <label>Верно</label>
+                                {% elif task1 == ""%}
+                                <label>Не решено</label>
+                                {% else %}
+                                <label>Неверно</label>
+                                {% endif %}</h2>
+                            <p style="margin-left: 18em">\(x - 1 \le 3x + 2\)</p>
+                            <img src="static/images/linner_3.jpg" alt="1"
+                                 style="margin-left: 2em; margin-top: 3em; margin-bottom: 1em;">
+                            <img src="static/images/linner_4.jpg" alt="1"
+                                 style="margin-left: 17em; margin-top: 3em; margin-bottom: 1em;">
+                            <p style="font-size: 20px; margin-left:1em; ">В качестве ответа введите номер верного ответа
+                                (1 картинка - 1, 2 картинка - 2)</p>
+                            <p style="margin-left: 2em">Ответ = <input name="task1" size="1"></p>
+                        </div>
+
+                        <input type="submit"
+                               style="margin-left: 2em; margin-top: 2em; margin-bottom: 2em; font-size:20px;">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

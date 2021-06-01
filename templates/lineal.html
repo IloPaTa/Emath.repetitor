@@ -1,0 +1,90 @@
+{% extends 'base.html' %}
+
+{%block body%}
+<!-- Main content -->
+<div class="templatemo-content col-1 light-gray-bg">
+    <div class="templatemo-top-nav-container">
+        <div class="row">
+            <nav class="templatemo-top-nav col-lg-12 col-md-12">
+                <ul class="text-uppercase">
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="templatemo-content-container">
+        <div class="templatemo-content-widget white-bg">
+            <h2 class="margin-bottom-10"><big>Линейные уравнения</big></h2>
+        </div>
+        <div class="templatemo-flex-row flex-content-row">
+            <div class="col-1">
+                <div class="panel panel-default margin-10">
+                    <div class="panel-heading">
+                        <h2>Теория</h2>
+                    </div>
+                    <div>
+                        <h2 style="margin-top: 1em;
+                                        margin-left: 1em;">Решение простых линейных уравнений</h2>
+                        <p style="margin-left: 1em; margin-top: 2em; font-size: 20px;">
+                            Вот простой алгоритм для облегчения решения линейных уравнений.</p>
+                        <ul>
+                            <li type="disc"
+                                style="margin-top: 1em; margin-bottom: 1em; margin-right: 40em; margin-left: 3em; font-size: 20px;">
+                                Раскрыть скобки, если они есть, путем перемножения "фонтанчиком"
+                            </li>
+                            <li type="disc"
+                                style="margin-top: 1em; margin-bottom: 1em; margin-right: 40em; margin-left: 3em; font-size: 20px;">
+                                Перенести слагаемые, содержащие переменную в левую сторону от знака равенства, а
+                                слагаемые без переменной — в правую;
+                            </li>
+                            <li type="disc"
+                                style="margin-top: 1em; margin-bottom: 1em; margin-right: 40em; margin-left: 3em; font-size: 20px;">
+                                Привести подобные слагаемые;
+                            </li>
+                            <li type="disc"
+                                style="margin-top: 1em; margin-bottom: 1em; margin-right: 40em; margin-left: 3em; font-size: 20px;">
+                                Разделить полученное левую и правую часть на коэффициент при переменной.
+                            </li>
+                        </ul>
+                        <div>
+                            <h2 style="margin-left: 1em; margin-top: 2em;">Пример 1</h2>
+                            <p style="margin-left: 2em; margin-top: 1em; font-size:20px;">\(-9(8 - 9x) = 4x + 5\)</p>
+                            <h2 style="margin-left: 1em; margin-top: 2em;">Решение:</h2>
+                            <p style="margin-left: 2em; margin-top: 1em; font-size:20px;">\(-9 * 8 - 9 * (-9x) = 4x +
+                                5\)</p>
+                            <p style="margin-left: 2em; margin-top: 1em; font-size:20px;">\(-72 + 81x = 4x + 5\)</p>
+                            <p style="margin-left: 2em; margin-top: 1em; font-size:20px;">\(81x - 4x = 72 + 5\)</p>
+                            <p style="margin-left: 2em; margin-top: 1em; font-size:20px;">\(77x = 77\)</p>
+                            <p style="margin-left: 2em; margin-top: 1em; font-size:20px;">\(x = {77\over77} \)</p>
+                            <p style="margin-left: 2em; margin-top: 1em; font-size:20px;">\(x = 1\)</p>
+                        </div>
+
+                        <h3 style="font-size: 30px; margin: 1em; margin-right: 50em; margin-bottom: 1em; margin-top: 1em;">
+                            Самостоятельно:</h3>
+                        <form action="" method="post">
+                            <div>
+                                <h2 style="margin-left: 2em; margin-top: 2em;">Задание 1.
+                                    {% if ans1 == "4" %}
+                                    <label>Верно</label>
+                                    {% elif ans1 == "" %}
+                                    <label>Не решено</label>
+                                    {% else %}
+                                    <label>Неверно</label>
+                                    {% endif %}</h2>
+                                <p style="margin-left: 3em; margin-top: 1em; font-size:20px;">\(-x - 2 + 3(x - 3) = 3(4
+                                    - x)
+                                    - 3\)</p>
+                                <p style="margin-left: 3em; margin-top: 1em; font-size:20px;">\(x = \)
+                                    <input type="text" name="task1" size="1"></p>
+
+
+                                <input type="submit"
+                                       style="margin-left: 2em; margin-top: 2em; margin-bottom: 2em; font-size:20px;">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

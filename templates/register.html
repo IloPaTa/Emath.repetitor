@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Название</title>
+    <meta name="description" content="">
+    <meta name="author" content="templatemo">
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,700' rel='stylesheet'
+          type='text/css'>
+    <link href="{{ url_for('static', filename='css/font-awesome.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/templatemo-style.css') }}" rel="stylesheet">
+    <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+</head>
+<body class="light-gray-bg">
+<div class="templatemo-content-widget templatemo-login-widget white-bg">
+    <header class="text-center">
+        <h1>Регистрация</h1>
+    </header>
+    <form action="/register" method="post" class="templatemo-login-form">
+        <div class="form-group">
+            <div class="input-group">
+                <div class="input-group-addon">Логин</div>
+                <input type="text" name="name" class="form-control" placeholder="Crowley">
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="input-group">
+                <div class="input-group-addon">Почта</div>
+                <input type="email" name="mail" class="form-control" placeholder="pavelchash@list.ru">
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="input-group">
+                <div class="input-group-addon">Пароль</div>
+                <input type="password" name="psw" class="form-control" placeholder="******">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <button type="submit" class="templatemo-blue-button width-100">Зарегистрироваться</button>
+        </div>
+    </form>
+</div>
+</body>

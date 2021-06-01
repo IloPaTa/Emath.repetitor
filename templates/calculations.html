@@ -1,0 +1,111 @@
+{% extends 'base.html' %}
+
+{%block body%}
+<div class="templatemo-content col-1 light-gray-bg">
+    <div class="templatemo-top-nav-container">
+        <div class="row">
+            <nav class="templatemo-top-nav col-lg-12 col-md-12">
+                <ul class="text-uppercase">
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="templatemo-content-container">
+        <div class="templatemo-content-widget white-bg">
+            <h2 class="margin-bottom-10"><big>Вычисления</big></h2>
+        </div>
+        <div class="templatemo-flex-row flex-content-row">
+            <div class="col-1">
+                <div class="panel panel-default margin-10">
+                    <div class="panel-heading">
+                        <h2>Теория</h2>
+                    </div>
+                    <div>
+                        <h2 style="margin-top: 1em;
+                                       margin-left: 0.5em;">Признаки делимости</h2>
+                        <ul>
+                            <li type="disc"
+                                style="margin-top: 1em; margin-bottom: 1em; margin-right: 40em; margin-left: 3em; font-size: 20px;">
+                                Число, делящееся на 2, называется четным, не
+                                делящееся - нечетным. Число делится на два, если
+                                его последняя цифра четная или ноль.
+                            </li>
+                            <li type="disc"
+                                style="margin-top: 1em; margin-bottom: 1em; margin-right: 40em; margin-left: 3em; font-size: 20px;">
+                                На 3 делятся те числа, у которых сумма цифр
+                                делится на 3; на 9 - те, у которых сумма цифр
+                                делится на 9.
+                            </li>
+                            <li type="disc"
+                                style="margin-top: 1em; margin-bottom: 1em; margin-right: 40em; margin-left: 3em; font-size: 20px;">
+                                На 5 делятся числа, последняя цифра которых 0 или
+                                5.
+                            </li>
+                            <li type="disc"
+                                style="margin-top: 1em; margin-bottom: 1em; margin-right: 40em; margin-left: 3em; font-size: 20px;">
+                                На 10 делятся только те числа, последняя цифра
+                                которых ноль, на 100 - только те числа, у которых
+                                две последние цифры нули, на 1000 - только те, у
+                                которых три последние цифры нули.
+                            </li>
+                        </ul>
+                        <h2 style="margin-left: 0.5em;">Пример 1.</h2>
+                        <p style="margin-top: 2em; margin-left: 2em; font-size: 20px;">\(({19\over8} +
+                            {11\over12}):{5\over48}\)</p>
+                        <h2 style="margin-left: 0.5em;">Решение</h2>
+                        <img src="static/images/degrees1.jpg" alt="1"
+                             style="margin-left: 3em; margin-top: 3em; margin-bottom: 1em;">
+                        
+                        <h2 style="margin-left: 0.5em;">Пример 1.</h2>
+                        <p style="margin-top: 2em; margin-left: 2em; font-size: 20px;">\({1\over{1\over18} -
+                            {1\over21}}\)</p>
+                        <h2 style="margin-left: 0.5em;">Решение</h2>
+                        <img src="static/images/degrees_2.jpg" alt="1"
+                             style="margin-left: 3em; margin-top: 3em; margin-bottom: 1em;">
+                        <h3 style="font-size: 30px; margin: 1em; margin-right: 50em; margin-bottom: 1em; margin-top: 1em;">
+                            Самостоятельно:</h3>
+
+
+                        <form action="" method="post">
+                            <div style="margin-bottom: 2em;">
+                                <h2 style=" font-size: 20px; margin-left: 2em;">Задание 1.
+                                    {% if ans1 == "17,5" %}
+                                    <label>Верно</label>
+                                    {% elif ans1 == "" %}
+                                    <label>Не решено</label>
+                                    {% else %}
+                                    <label>Неверно</label>
+                                    {% endif %}</h2>
+
+                                <label style="margin-top: 1em; margin-left: 2em; font-size: 30px;">
+                                    \( {1\over{1\over30} + {1\over42}} = \)
+                                    <input style="font-size: 15px;" name="task1" maxlength="10" size="5">
+
+                                </label>
+
+                            </div>
+                            <div>
+                                <h2 style=" font-size: 20px; margin-left: 2em;">Задание 2.
+                                    {% if ans2 == "12,5" %}
+                                    <label>Верно</label>
+                                    {% elif ans2 == "" %}
+                                    <label>Не решено</label>
+                                    {% else %}
+                                    <label>Неверно</label>
+                                    {% endif %}</h2>
+                                <label style=" font-size: 20px;margin-top: 1em; margin-left: 2em; font-size: 30px;">
+                                    \( {21\over{0,6 * 2,8}} = \)
+                                    <input style="font-size: 15px;" name="task2" maxlength="10" size="5">
+
+                                </label>
+                            </div>
+                            <input type="submit"
+                                   style="margin-left: 2em; margin-top: 2em; margin-bottom: 2em; font-size:20px;">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

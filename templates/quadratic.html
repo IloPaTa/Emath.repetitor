@@ -1,0 +1,163 @@
+{% extends 'base.html' %}
+
+{%block body%}
+<div class="templatemo-content col-1 light-gray-bg">
+    <div class="templatemo-top-nav-container">
+        <div class="row">
+            <nav class="templatemo-top-nav col-lg-12 col-md-12">
+                <ul class="text-uppercase">
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="templatemo-content-container">
+        <div class="templatemo-content-widget white-bg">
+            <h2 class="margin-bottom-10"><big>Квадратные уравнения</big></h2>
+        </div>
+        <div class="templatemo-flex-row flex-content-row">
+            <div class="col-1">
+                <div class="panel panel-default margin-10">
+                    <div class="panel-heading">
+                        <h2>Теория</h2>
+                    </div>
+                    <div>
+                        <p style="font-size: 20px; margin: 1em; margin-right: 50em"><i>Квадратное уравнение</i> - это
+                            уравнение вида: \(ax^2 + bx + c = 0\), где коэффициенты a, b
+                            и c — это произвольные числа, причем \(a \ne 0\), а коэффициенты b и c - любые числа, в том
+                            числе и 0.
+                            То есть, квадратным называется уравнение, где есть \(x^2\).</p>
+                    </div>
+                    <p style="font-size: 20px; margin: 1em; margin-right: 50em">Квадратное уравнение может:</p>
+                    <ul style="margin-top: 1em; margin-bottom: 0.5em; margin-right: 40em; margin-left: 3em; font-size: 20px;">
+                        <li type="1" style="margin-bottom: 1em;">
+                            Не иметь корней;
+                        </li>
+                        <li type="1" style="margin-bottom: 1em;">
+                            Иметь один корень;
+                        </li>
+                        <li type="1" style="margin-bottom: 1em;">
+                            Иметь два различных корня.
+                        </li>
+                    </ul>
+                    <div style="font-size: 20px; margin: 1em; margin-right: 50em">
+                        <p>Это зависит от дискриминанта.</p>
+                        <p>Формула нахождения:</p>
+                        <p>\(D = b^2 - 4ac\), где a,b,c - коэффициенты квадратного уравнения.</p>
+                        <p>Вот, например, для уравнения:</p>
+                        <p>\(x^2 - x - 6 = 0\)</p>
+                        <p>\(D = (-1)^2 - 4 * 1 * (-6) = 1 + 24 = 25\)</p>
+                    </div>
+                    <p style="font-size: 20px; margin: 1em; margin-right: 30em">Если:</p>
+                    <ul style="margin-top: 1em; margin-bottom: 0.5em; margin-right: 40em; margin-left: 3em; font-size: 20px;">
+                        <li type="1" style="margin-bottom: 1em;">
+                            \(D < 0\), корней нет;
+                        </li>
+                        <li type="1" style="margin-bottom: 1em;">
+                            \(D = 0\), будет ровно один корень;
+                        </li>
+                        <li type="1" style="margin-bottom: 1em;">
+                            \(D > 0\), корней будет два;
+                        </li>
+                    </ul>
+                    <h2 style="margin-top: 1em; margin-left: 0.5em;"><strong>Корни квадратного уравнения</strong></h2>
+                        <p style="font-size: 20px; margin: 1em; margin-right: 30em">Теперь перейдем к решению уравнения.</p>
+                        <ul style="margin-top: 1em; margin-bottom: 0.5em; margin-right: 20em; margin-left: 3em; font-size: 20px;">
+                            <li type="disc" style="margin-bottom: 1em;">
+                                Если дискриминант D > 0, корни можно найти по формулам: \(x_1 = {-b + \sqrt D \over 2a}
+                                \) \(x_2 = {-b - \sqrt D \over 2a} \)
+                            </li>
+                            <li type="disc" style="margin-bottom: 1em;">
+                                Когда D = 0, можно использовать любую из этих формул — получится одно и то же число,
+                                которое и будет ответом, потому что если прибавлять или отнимать 0, то ничего не будет
+                                изменяться.
+                            </li>
+                            <li type="disc" style="margin-bottom: 1em;">
+                                И, если D < 0, то уравнение не имеет решений.
+                            </li>
+                        </ul>
+                        <p style="font-size: 20px; margin: 1em; margin-right: 30em">Совет: перед тем как начать решать квадратное уравнение лучше всего сделать коэффициент перед
+                            \(x^2\) равный 1 или хотя бы сделать его максимально минимальным и положительным, так
+                            уравнение будет решать намного легче.</p>
+                    <div style="font-size: 20px; margin: 1em; margin-right: 50em">
+                        <h2 style="margin-bottom: 0.5em; font-size: 24px;">Пример 1:</h2>
+                        <p style="margin-left: 2em">\(x^2 + 3x - 4 = 0\)</p>
+                        <h2 style="margin-bottom: 0.5em; font-size: 24px;">Решение:</h2>
+                        <p style="margin-left: 2em">\(x^2 + 3x - 4 = 0\)</p>
+                        <p style="margin-left: 2em">\(D = 9 - 4 * (-4) = 9 + 16 = 25 = 5^2\)</p>
+                        <p style="margin-left: 2em">\(x_1 = {(-3 + 5)\over 2} = {2 \over 2} = 1\)</p>
+                        <p style="margin-left: 2em">\(x_2 = {(-3 - 5)\over 2} = {-8 \over 2} = -4\)</p>
+                    </div>
+                    <h2 style="margin-top: 1em; margin-left: 0.5em;"><strong>Неполные квадратные уравнения</strong></h2>
+                    <div style="font-size: 20px; margin: 1em; margin-right: 30em">
+                        <p>Существуют также неполные квадратные уравнения. Это когда коэффициент b или c или равняется
+                            нулю, но не a, если коэффициент a = 0, то уравнение будет уже не квадратным.
+                            Неполные квадратные уравнения можно решать тоже через дискриминант или другими
+                            способами.</p>
+                    </div>
+                    <div style="font-size: 20px; margin: 1em; margin-right: 50em">
+                        <h2 style="margin-bottom: 0.5em; font-size: 24px;">Пример 2:</h2>
+                        <p style="margin-left: 2em">\(x^2 - 1 = 0\)</p>
+                        <h2 style="margin-bottom: 0.5em; font-size: 24px;">Решение:</h2>
+                        <p style="margin-left: 2em">\(x^2 - 1 = 0\)</p>
+                        <p style="margin-left: 2em">\(D = 0^2 - 1 * (-4) = 4 = 2^2\)</p>
+                        <p style="margin-left: 2em">\(x_1 = {(0 + 2)\over 2} = 1\)</p>
+                        <p style="margin-left: 2em">\(x_2 = {(0 - 2)\over 2} = -1\)</p>
+                    </div>
+                    <div style="font-size: 20px; margin: 1em; margin-right: 50em">
+                        <h2 style="margin-bottom: 0.5em; font-size: 24px;">Пример 3:</h2>
+                        <p style="margin-left: 2em">\(3x - 6x^2 = 0\)</p>
+                        <h2 style="margin-bottom: 0.5em; font-size: 24px;">Решение:</h2>
+                        <p style="margin-left: 2em">\(3x - 6x^2 = 0\) | \( * -{1\over3}\)</p>
+                        <p style="margin-left: 2em">\(-x + 2x^2 = 0\)</p>
+                        <p style="margin-left: 2em">\(2x^2 - x= 0\)</p>
+                        <p style="margin-left: 2em">\(D = 1^2 - 4 * 2 * 0 = 1\)</p>
+                        <p style="margin-left: 2em">\(x_1 = {(1 + 1)\over 4} = 0.5\)</p>
+                        <p style="margin-left: 2em">\(x_2 = {(1 - 1)\over 4} = 0\)</p>
+                    </div>
+                    <form action="/quadratic" method="post">
+                        <div style="font-size: 20px; margin: 1em; margin-right: 50em">
+                            <h3 style="margin-bottom: 1em; margin-top: 1em;">Самостоятельно:</h3>
+                            <h2 style="margin-bottom: 0.5em; font-size: 24px;">Задание 1:
+                                {% if task1 == "49" and task2 == "72" and task3 == "121" and task4 == "11" and task5 ==
+                                "2" and task6 == "-9"%}
+                                <label>Верно</label>
+                                {% elif task1 == "" and task2 == "" and task3 == "" and task3 == "" and task3 == "" and
+                                task3 == "" %}
+                                <label>Не решено</label>
+                                {% else %}
+                                <label>Неверно</label>
+                                {% endif %}</h2>
+                            <p style="margin-left: 2em">\(x^2 + 7x = 18\))</p>
+                            <h2 style="margin-bottom: 0.5em; font-size: 24px;">Решение:</h2>
+                            <p style="margin-left: 2em">\(3x - 6x^2 = 0\) | \( * -{1\over3}\)</p>
+                            <p style="margin-left: 2em">D = <input name="task1" size="1"> + <input name="task2"
+                                                                                                   size="1"> = <input
+                                    name="task3" size="1"> = <input name="task4" size="1"> <sup>2</sup></p>
+                            <p style="margin-left: 2em">\(x_1\) = <input name="task5" size="1"></p>
+                            <p style="margin-left: 2em">\(x_2\) = <input name="task6" size="1"></p>
+                        </div>
+                        <div style="font-size: 20px; margin: 1em; margin-right: 50em">
+                            <h2 style="margin-bottom: 0.5em; font-size: 24px;">Задание 2:
+                                {% if task7 == "3" and task8 == "-3"%}
+                                <label>Верно</label>
+                                {% elif task7 == "" and task8 == ""%}
+                                <label>Не решено</label>
+                                {% else %}
+                                <label>Неверно</label>
+                                {% endif %}</h2>
+                            <p style="margin-left: 2em">\(9 - x^2\)</p>
+                            <h2 style="margin-bottom: 0.5em; font-size: 24px;">Решение:</h2>
+                            <p style="margin-left: 2em">\(9 - x^2\)</p>
+                            <p style="margin-left: 2em">\(x_1\) = <input name="task7" size="1"></p>
+                            <p style="margin-left: 2em">\(x_2\) = <input name="task8" size="1"></p>
+                        </div>
+                         <input type="submit"
+                                   style="margin-left: 2em; margin-top: 2em; margin-bottom: 2em; font-size:20px;">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

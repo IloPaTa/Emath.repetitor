@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Название</title>
+    <meta name="description" content="">
+    <meta name="author" content="templatemo">
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,700' rel='stylesheet'
+          type='text/css'>
+    <link href="{{ url_for('static', filename='css/font-awesome.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/templatemo-style.css') }}" rel="stylesheet">
+    <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+</head>
+<body class="light-gray-bg">
+
+<div class="templatemo-content-widget templatemo-login-widget white-bg">
+    <header class="text-center">
+        <div class="square"></div>
+        <h1>Авторизация</h1>
+    </header>
+    <form action="/login" method="post" class="templatemo-login-form">
+        <div class="form-group">
+            <div class="input-group">
+                <div class="input-group-addon"><i class="fa fa-user fa-fw"></i></div>
+                <input type="text" name="email" class="form-control" placeholder="pavelchash@list.ru">
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="input-group">
+                <div class="input-group-addon"><i class="fa fa-key fa-fw"></i></div>
+                <input type="password" name="psw" class="form-control" placeholder="******">
+            </div>
+        </div>
+        <div class="form-group">
+        </div>
+        <div class="form-group">
+            <button type="submit" class="templatemo-blue-button width-100">Login</button>
+        </div>
+    </form>
+</div>
+<div class="templatemo-content-widget templatemo-login-widget templatemo-register-widget white-bg">
+    <p> <strong><a href="register" class="blue-text">Регистрация</a></strong></p>
+</div>
+</body>
